@@ -19,6 +19,10 @@
 		3634DCDE29239E6000070744 /* ColumnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */; };
 		3634DCDF29239E6000070744 /* ColumnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */; };
 		3634DCE129239EBA00070744 /* ColumnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634DCE029239EBA00070744 /* ColumnController.swift */; };
+		3689D8872923A5DE0086CAFE /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */; };
+		3689D8882923A5DE0086CAFE /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */; };
+		3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D8892923A8070086CAFE /* AlaramViewController.swift */; };
+		3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D88B2923AC020086CAFE /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnTableViewCell.swift; sourceTree = "<group>"; };
 		3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColumnTableViewCell.xib; sourceTree = "<group>"; };
 		3634DCE029239EBA00070744 /* ColumnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnController.swift; sourceTree = "<group>"; };
+		3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
+		3689D8892923A8070086CAFE /* AlaramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramViewController.swift; sourceTree = "<group>"; };
+		3689D88B2923AC020086CAFE /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,8 @@
 				3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */,
 				3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */,
 				165EEE47291A726100B5E4F2 /* Main.storyboard */,
+				3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */,
+				3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -104,6 +114,8 @@
 				165EEE45291A726100B5E4F2 /* ViewController.swift */,
 				165EEE58291A75BC00B5E4F2 /* CalendarViewController.swift */,
 				165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */,
+				3689D8892923A8070086CAFE /* AlaramViewController.swift */,
+				3689D88B2923AC020086CAFE /* PickerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -172,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3689D8882923A5DE0086CAFE /* AlarmTableViewCell.xib in Resources */,
 				165EEE4E291A726200B5E4F2 /* LaunchScreen.storyboard in Resources */,
 				3634DCDF29239E6000070744 /* ColumnTableViewCell.xib in Resources */,
 				165EEE4B291A726200B5E4F2 /* Assets.xcassets in Resources */,
@@ -186,9 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */,
 				165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */,
+				3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */,
 				3634DCE129239EBA00070744 /* ColumnController.swift in Sources */,
 				3634DCDE29239E6000070744 /* ColumnTableViewCell.swift in Sources */,
+				3689D8872923A5DE0086CAFE /* AlarmTableViewCell.swift in Sources */,
 				165EEE59291A75BC00B5E4F2 /* CalendarViewController.swift in Sources */,
 				165EEE46291A726100B5E4F2 /* ViewController.swift in Sources */,
 				165EEE42291A726100B5E4F2 /* AppDelegate.swift in Sources */,
