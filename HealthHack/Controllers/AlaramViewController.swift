@@ -23,6 +23,7 @@ class AlaramViewController: UIViewController {
     
     func setupTable(){
         alaramTableView.dataSource = self
+        alaramTableView.delegate = self
         alaramTableView.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "AlarmTableViewCell")
     }
 
