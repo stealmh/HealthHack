@@ -13,6 +13,9 @@
 		165EEE49291A726100B5E4F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165EEE47291A726100B5E4F2 /* Main.storyboard */; };
 		165EEE4B291A726200B5E4F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165EEE4A291A726200B5E4F2 /* Assets.xcassets */; };
 		165EEE4E291A726200B5E4F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165EEE4C291A726200B5E4F2 /* LaunchScreen.storyboard */; };
+		165EEE57291A759B00B5E4F2 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 165EEE56291A759B00B5E4F2 /* FSCalendar */; };
+		165EEE59291A75BC00B5E4F2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE58291A75BC00B5E4F2 /* CalendarViewController.swift */; };
+		165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		165EEE4A291A726200B5E4F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165EEE4D291A726200B5E4F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		165EEE4F291A726200B5E4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165EEE58291A75BC00B5E4F2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165EEE57291A759B00B5E4F2 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		165EEE35291A726100B5E4F2 = {
 			isa = PBXGroup;
 			children = (
+				165EEE41291A726100B5E4F2 /* AppDelegate.swift */,
+				165EEE43291A726100B5E4F2 /* SceneDelegate.swift */,
 				165EEE40291A726100B5E4F2 /* HealthHack */,
 				165EEE3F291A726100B5E4F2 /* Products */,
 			);
@@ -56,15 +64,39 @@
 		165EEE40291A726100B5E4F2 /* HealthHack */ = {
 			isa = PBXGroup;
 			children = (
-				165EEE41291A726100B5E4F2 /* AppDelegate.swift */,
-				165EEE43291A726100B5E4F2 /* SceneDelegate.swift */,
-				165EEE45291A726100B5E4F2 /* ViewController.swift */,
-				165EEE47291A726100B5E4F2 /* Main.storyboard */,
+				165EEE5B291A75C900B5E4F2 /* Views */,
+				165EEE5A291A75C400B5E4F2 /* Models */,
+				165EEE5C291A75CD00B5E4F2 /* Controllers */,
 				165EEE4A291A726200B5E4F2 /* Assets.xcassets */,
 				165EEE4C291A726200B5E4F2 /* LaunchScreen.storyboard */,
 				165EEE4F291A726200B5E4F2 /* Info.plist */,
 			);
 			path = HealthHack;
+			sourceTree = "<group>";
+		};
+		165EEE5A291A75C400B5E4F2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		165EEE5B291A75C900B5E4F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				165EEE47291A726100B5E4F2 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		165EEE5C291A75CD00B5E4F2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				165EEE45291A726100B5E4F2 /* ViewController.swift */,
+				165EEE58291A75BC00B5E4F2 /* CalendarViewController.swift */,
+				165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,9 @@
 			dependencies = (
 			);
 			name = HealthHack;
+			packageProductDependencies = (
+				165EEE56291A759B00B5E4F2 /* FSCalendar */,
+			);
 			productName = HealthHack;
 			productReference = 165EEE3E291A726100B5E4F2 /* HealthHack.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,9 @@
 				Base,
 			);
 			mainGroup = 165EEE35291A726100B5E4F2;
+			packageReferences = (
+				165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 165EEE3F291A726100B5E4F2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */,
+				165EEE59291A75BC00B5E4F2 /* CalendarViewController.swift in Sources */,
 				165EEE46291A726100B5E4F2 /* ViewController.swift in Sources */,
 				165EEE42291A726100B5E4F2 /* AppDelegate.swift in Sources */,
 				165EEE44291A726100B5E4F2 /* SceneDelegate.swift in Sources */,
@@ -358,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		165EEE56291A759B00B5E4F2 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 165EEE36291A726100B5E4F2 /* Project object */;
 }
