@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1624953329337B5300BDBA3D /* FatSecretSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1624953229337B5300BDBA3D /* FatSecretSwift */; };
 		165EEE42291A726100B5E4F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE41291A726100B5E4F2 /* AppDelegate.swift */; };
 		165EEE44291A726100B5E4F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE43291A726100B5E4F2 /* SceneDelegate.swift */; };
 		165EEE46291A726100B5E4F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE45291A726100B5E4F2 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1624953329337B5300BDBA3D /* FatSecretSwift in Frameworks */,
 				165EEE57291A759B00B5E4F2 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +152,7 @@
 			name = HealthHack;
 			packageProductDependencies = (
 				165EEE56291A759B00B5E4F2 /* FSCalendar */,
+				1624953229337B5300BDBA3D /* FatSecretSwift */,
 			);
 			productName = HealthHack;
 			productReference = 165EEE3E291A726100B5E4F2 /* HealthHack.app */;
@@ -181,6 +184,7 @@
 			mainGroup = 165EEE35291A726100B5E4F2;
 			packageReferences = (
 				165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				1624953129337B5300BDBA3D /* XCRemoteSwiftPackageReference "FatSecretSwift" */,
 			);
 			productRefGroup = 165EEE3F291A726100B5E4F2 /* Products */;
 			projectDirPath = "";
@@ -444,6 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1624953129337B5300BDBA3D /* XCRemoteSwiftPackageReference "FatSecretSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NicholasBellucci/FatSecretSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
@@ -455,6 +467,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1624953229337B5300BDBA3D /* FatSecretSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1624953129337B5300BDBA3D /* XCRemoteSwiftPackageReference "FatSecretSwift" */;
+			productName = FatSecretSwift;
+		};
 		165EEE56291A759B00B5E4F2 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */;

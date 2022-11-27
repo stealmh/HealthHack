@@ -1,6 +1,24 @@
 {
   "pins" : [
     {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "19b3c3ceed117c5cc883517c4e658548315ba70b",
+        "version" : "1.6.0"
+      }
+    },
+    {
+      "identity" : "fatsecretswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/NicholasBellucci/FatSecretSwift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "615d69086a2feb1acfdf1a248e43479cfe657920"
+      }
+    },
+    {
       "identity" : "fscalendar",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/WenchaoD/FSCalendar",

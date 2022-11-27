@@ -6,14 +6,23 @@
 //
 
 import UIKit
+import FatSecretSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    enum Constants {
+        static let apiKey = "919b701f763c4b2db6641b62fd1b5e49"
+        static let apiSecret = "ddb8a0f5b86b41c7b06d8894a1675685"
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        FatSecretCredentials.setConsumerKey(Constants.apiKey)
+        FatSecretCredentials.setSharedSecret(Constants.apiSecret)
+        
         return true
     }
 
