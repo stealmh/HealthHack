@@ -23,6 +23,9 @@
 		3634DCDE29239E6000070744 /* ColumnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */; };
 		3634DCDF29239E6000070744 /* ColumnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */; };
 		3634DCE129239EBA00070744 /* ColumnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634DCE029239EBA00070744 /* ColumnController.swift */; };
+		3667544D29475CE900876BDC /* EncycManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667544C29475CE900876BDC /* EncycManager.swift */; };
+		3667545029475DA500876BDC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3667544F29475DA500876BDC /* Constants.swift */; };
+		366754522947655000876BDC /* Encyc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366754512947655000876BDC /* Encyc.swift */; };
 		3689D8872923A5DE0086CAFE /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */; };
 		3689D8882923A5DE0086CAFE /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */; };
 		3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D8892923A8070086CAFE /* AlaramViewController.swift */; };
@@ -47,6 +50,9 @@
 		3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnTableViewCell.swift; sourceTree = "<group>"; };
 		3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColumnTableViewCell.xib; sourceTree = "<group>"; };
 		3634DCE029239EBA00070744 /* ColumnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnController.swift; sourceTree = "<group>"; };
+		3667544C29475CE900876BDC /* EncycManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncycManager.swift; sourceTree = "<group>"; };
+		3667544F29475DA500876BDC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		366754512947655000876BDC /* Encyc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encyc.swift; sourceTree = "<group>"; };
 		3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
 		3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		3689D8892923A8070086CAFE /* AlaramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 		165EEE40291A726100B5E4F2 /* HealthHack */ = {
 			isa = PBXGroup;
 			children = (
+				3667544E29475D5800876BDC /* Utils */,
 				3625F12E29333D69004EBC25 /* Models */,
 				165EEE5B291A75C900B5E4F2 /* Views */,
 				165EEE5C291A75CD00B5E4F2 /* Controllers */,
@@ -128,8 +135,18 @@
 				3625F13129333D94004EBC25 /* AuthManager.swift */,
 				3625F13329333DB5004EBC25 /* AutoResponse.swift */,
 				3625F13529333DCD004EBC25 /* FoodModel.swift */,
+				3667544C29475CE900876BDC /* EncycManager.swift */,
+				366754512947655000876BDC /* Encyc.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		3667544E29475D5800876BDC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3667544F29475DA500876BDC /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,12 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				366754522947655000876BDC /* Encyc.swift in Sources */,
 				3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */,
 				3625F13229333D94004EBC25 /* AuthManager.swift in Sources */,
 				165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */,
 				3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */,
 				3634DCE129239EBA00070744 /* ColumnController.swift in Sources */,
+				3667544D29475CE900876BDC /* EncycManager.swift in Sources */,
 				3634DCDE29239E6000070744 /* ColumnTableViewCell.swift in Sources */,
+				3667545029475DA500876BDC /* Constants.swift in Sources */,
 				3625F13429333DB5004EBC25 /* AutoResponse.swift in Sources */,
 				3689D8872923A5DE0086CAFE /* AlarmTableViewCell.swift in Sources */,
 				165EEE59291A75BC00B5E4F2 /* CalendarViewController.swift in Sources */,
