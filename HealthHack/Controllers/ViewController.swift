@@ -84,8 +84,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         
         
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CustomHeaderView") as! HeaderView
-        headerView.sibalLabel.setTitle(mealTitle[section], for: .normal)
-        headerView.sibalLabel.addTarget(self,
+        headerView.mealLabel.setTitle(mealTitle[section], for: .normal)
+        headerView.mealLabel.addTarget(self,
                                         action: #selector(self.hideSection(sender:)),
                                         for: .touchUpInside)
         return headerView
