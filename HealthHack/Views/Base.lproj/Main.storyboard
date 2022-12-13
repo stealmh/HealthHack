@@ -16,21 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홈 / 식사기록 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kh8-vl-O2U">
-                                <rect key="frame" x="10.666666666666657" y="394" width="368.66666666666674" height="56.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="LAd-AP-SLn">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fCo-8J-YKs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kh8-vl-O2U" firstAttribute="centerX" secondItem="NHf-CV-Ufi" secondAttribute="centerX" id="3Pa-9A-5cH"/>
-                            <constraint firstItem="kh8-vl-O2U" firstAttribute="centerY" secondItem="NHf-CV-Ufi" secondAttribute="centerY" id="roy-Rp-R33"/>
+                            <constraint firstItem="LAd-AP-SLn" firstAttribute="top" secondItem="fCo-8J-YKs" secondAttribute="top" id="3O7-OR-55h"/>
+                            <constraint firstItem="LAd-AP-SLn" firstAttribute="leading" secondItem="fCo-8J-YKs" secondAttribute="leading" id="LZr-L6-Yip"/>
+                            <constraint firstItem="fCo-8J-YKs" firstAttribute="bottom" secondItem="LAd-AP-SLn" secondAttribute="bottom" id="eqv-hd-Ozk"/>
+                            <constraint firstItem="fCo-8J-YKs" firstAttribute="trailing" secondItem="LAd-AP-SLn" secondAttribute="trailing" id="ziP-Ln-fi1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZmW-gd-hXS"/>
+                    <connections>
+                        <outlet property="myTableView" destination="LAd-AP-SLn" id="dtl-n6-Kf9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFE-8m-MUg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
