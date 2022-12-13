@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1624953329337B5300BDBA3D /* FatSecretSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1624953229337B5300BDBA3D /* FatSecretSwift */; };
+		163C2DD72948A0E200BB1FE9 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C2DD62948A0E200BB1FE9 /* HeaderView.swift */; };
+		163C2DD92948A19100BB1FE9 /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 163C2DD82948A19000BB1FE9 /* CustomHeaderView.xib */; };
 		165EEE42291A726100B5E4F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE41291A726100B5E4F2 /* AppDelegate.swift */; };
 		165EEE44291A726100B5E4F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE43291A726100B5E4F2 /* SceneDelegate.swift */; };
 		165EEE46291A726100B5E4F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE45291A726100B5E4F2 /* ViewController.swift */; };
@@ -33,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		163C2DD62948A0E200BB1FE9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		163C2DD82948A19000BB1FE9 /* CustomHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		165EEE3E291A726100B5E4F2 /* HealthHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		165EEE41291A726100B5E4F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		165EEE43291A726100B5E4F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1624953329337B5300BDBA3D /* FatSecretSwift in Frameworks */,
 				165EEE57291A759B00B5E4F2 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +117,8 @@
 				165EEE47291A726100B5E4F2 /* Main.storyboard */,
 				3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */,
 				3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */,
+				163C2DD62948A0E200BB1FE9 /* HeaderView.swift */,
+				163C2DD82948A19000BB1FE9 /* CustomHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			name = HealthHack;
 			packageProductDependencies = (
 				165EEE56291A759B00B5E4F2 /* FSCalendar */,
+				1624953229337B5300BDBA3D /* FatSecretSwift */,
 			);
 			productName = HealthHack;
 			productReference = 165EEE3E291A726100B5E4F2 /* HealthHack.app */;
@@ -198,6 +207,7 @@
 			mainGroup = 165EEE35291A726100B5E4F2;
 			packageReferences = (
 				165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				1624953129337B5300BDBA3D /* XCRemoteSwiftPackageReference "FatSecretSwift" */,
 			);
 			productRefGroup = 165EEE3F291A726100B5E4F2 /* Products */;
 			projectDirPath = "";
@@ -217,6 +227,7 @@
 				165EEE4E291A726200B5E4F2 /* LaunchScreen.storyboard in Resources */,
 				3634DCDF29239E6000070744 /* ColumnTableViewCell.xib in Resources */,
 				165EEE4B291A726200B5E4F2 /* Assets.xcassets in Resources */,
+				163C2DD92948A19100BB1FE9 /* CustomHeaderView.xib in Resources */,
 				165EEE49291A726100B5E4F2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +252,7 @@
 				3689D8872923A5DE0086CAFE /* AlarmTableViewCell.swift in Sources */,
 				165EEE59291A75BC00B5E4F2 /* CalendarViewController.swift in Sources */,
 				165EEE46291A726100B5E4F2 /* ViewController.swift in Sources */,
+				163C2DD72948A0E200BB1FE9 /* HeaderView.swift in Sources */,
 				3625F13029333D74004EBC25 /* APICaller.swift in Sources */,
 				165EEE42291A726100B5E4F2 /* AppDelegate.swift in Sources */,
 				165EEE44291A726100B5E4F2 /* SceneDelegate.swift in Sources */,
@@ -464,6 +476,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1624953129337B5300BDBA3D /* XCRemoteSwiftPackageReference "FatSecretSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NicholasBellucci/FatSecretSwift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
@@ -475,6 +495,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1624953229337B5300BDBA3D /* FatSecretSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1624953129337B5300BDBA3D /* XCRemoteSwiftPackageReference "FatSecretSwift" */;
+			productName = FatSecretSwift;
+		};
 		165EEE56291A759B00B5E4F2 /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 165EEE55291A759B00B5E4F2 /* XCRemoteSwiftPackageReference "FSCalendar" */;
