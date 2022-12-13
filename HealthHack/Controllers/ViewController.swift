@@ -33,6 +33,7 @@ class ViewController: UIViewController {
         fatSecretClient.searchFood(name: "Hotdog") {search in
             print(search.foods[0])
         }
+        myTableView.register(UINib(nibName: "CustomHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "CustomHeaderView")
         
     }
 }
@@ -62,24 +63,32 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         // UIButton 생성
-        let sectionButton = UIButton()
-        
-        // section 제목
-        sectionButton.setTitle(mealTitle[section],
-                               for: .normal)
-        
-        // section 배경 색
-        sectionButton.backgroundColor = .systemBlue
-        
-        // tag로 섹션을 구분할 것이다.
-        sectionButton.tag = section
-        
-        // section을 터치했을 때 실행할 메서드 설정(밑에서 구현한다.)
-        sectionButton.addTarget(self,
-                                action: #selector(self.hideSection(sender:)),
-                                for: .touchUpInside)
+//        let sectionButton = UIButton()
+//
+//        // section 제목
+//        sectionButton.setTitle(mealTitle[section],
+//                               for: .normal)
+//
+//        // section 배경 색
+//        sectionButton.backgroundColor = .systemBlue
+//
+//        // tag로 섹션을 구분할 것이다.
+//        sectionButton.tag = section
+//
+//        // section을 터치했을 때 실행할 메서드 설정(밑에서 구현한다.)
+//        sectionButton.addTarget(self,
+//                                action: #selector(self.hideSection(sender:)),
+//                                for: .touchUpInside)
 
-        return sectionButton
+//        return sectionButton
+        
+        
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CustomHeaderView") as! HeaderView
+        headerView.sibalLabel.setTitle(mealTitle[section], for: .normal)
+        headerView.sibalLabel.addTarget(self,
+                                        action: #selector(self.hideSection(sender:)),
+                                        for: .touchUpInside)
+        return headerView
     }
     
     @objc
