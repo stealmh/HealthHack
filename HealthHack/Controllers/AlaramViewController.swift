@@ -7,10 +7,16 @@
 
 import UIKit
 
+
 class AlaramViewController: UIViewController {
+    
+    private let notificationPublisher = NotificationPublisher()
 
     @IBOutlet weak var alaramTableView: UITableView!
     
+    @IBAction func sendNotification(_ sender: Any) {
+        notificationPublisher.sendNotification(title: "Hey", subtitle: "We made a cool", body: "notification app", badge: 1, delayInterval: nil)
+    }
     
     var timerArray:[String] = ["아침 식사 시간", "점심 식사 시간", "저녁 식사 시간", "간식 시간"]
     var timerTime:[String] = ["08:30", "12:00", "18:00", "15:00"]

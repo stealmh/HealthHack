@@ -16,6 +16,8 @@
 		165EEE57291A759B00B5E4F2 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 165EEE56291A759B00B5E4F2 /* FSCalendar */; };
 		165EEE59291A75BC00B5E4F2 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE58291A75BC00B5E4F2 /* CalendarViewController.swift */; };
 		165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */; };
+		3606901E29489ED8008AD242 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3606901C29489ED8008AD242 /* CustomCell.swift */; };
+		3606901F29489ED8008AD242 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3606901D29489ED8008AD242 /* CustomCell.xib */; };
 		3634DCDE29239E6000070744 /* ColumnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */; };
 		3634DCDF29239E6000070744 /* ColumnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */; };
 		3634DCE129239EBA00070744 /* ColumnController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3634DCE029239EBA00070744 /* ColumnController.swift */; };
@@ -23,6 +25,9 @@
 		3689D8882923A5DE0086CAFE /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */; };
 		3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D8892923A8070086CAFE /* AlaramViewController.swift */; };
 		3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D88B2923AC020086CAFE /* PickerViewController.swift */; };
+		36950F8A295341280067128A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36950F89295341280067128A /* GoogleService-Info.plist */; };
+		3697673929509E9600CC8A7C /* NotificationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3697673829509E9600CC8A7C /* NotificationPublisher.swift */; };
+		65CE91FCC8FF3FCD9818FA7A /* Pods_HealthHack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C5394DE37C945C2D7F86BB /* Pods_HealthHack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,8 @@
 		165EEE4F291A726200B5E4F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		165EEE58291A75BC00B5E4F2 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarDetailViewController.swift; sourceTree = "<group>"; };
+		3606901C29489ED8008AD242 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		3606901D29489ED8008AD242 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		3634DCDC29239E6000070744 /* ColumnTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnTableViewCell.swift; sourceTree = "<group>"; };
 		3634DCDD29239E6000070744 /* ColumnTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColumnTableViewCell.xib; sourceTree = "<group>"; };
 		3634DCE029239EBA00070744 /* ColumnController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnController.swift; sourceTree = "<group>"; };
@@ -43,6 +50,11 @@
 		3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		3689D8892923A8070086CAFE /* AlaramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramViewController.swift; sourceTree = "<group>"; };
 		3689D88B2923AC020086CAFE /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		36950F89295341280067128A /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3697673829509E9600CC8A7C /* NotificationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPublisher.swift; sourceTree = "<group>"; };
+		6E695E66853E187AB514EDCF /* Pods-HealthHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHack.debug.xcconfig"; path = "Target Support Files/Pods-HealthHack/Pods-HealthHack.debug.xcconfig"; sourceTree = "<group>"; };
+		C563E5C7C360A209EED63434 /* Pods-HealthHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHack.release.xcconfig"; path = "Target Support Files/Pods-HealthHack/Pods-HealthHack.release.xcconfig"; sourceTree = "<group>"; };
+		F4C5394DE37C945C2D7F86BB /* Pods_HealthHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				165EEE57291A759B00B5E4F2 /* FSCalendar in Frameworks */,
+				65CE91FCC8FF3FCD9818FA7A /* Pods_HealthHack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,10 +73,13 @@
 		165EEE35291A726100B5E4F2 = {
 			isa = PBXGroup;
 			children = (
+				3697673829509E9600CC8A7C /* NotificationPublisher.swift */,
 				165EEE41291A726100B5E4F2 /* AppDelegate.swift */,
 				165EEE43291A726100B5E4F2 /* SceneDelegate.swift */,
 				165EEE40291A726100B5E4F2 /* HealthHack */,
 				165EEE3F291A726100B5E4F2 /* Products */,
+				F11A683FAB66958E543F47FF /* Pods */,
+				EBCF799CDE78479689BE7702 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +99,7 @@
 				165EEE5C291A75CD00B5E4F2 /* Controllers */,
 				165EEE4A291A726200B5E4F2 /* Assets.xcassets */,
 				165EEE4C291A726200B5E4F2 /* LaunchScreen.storyboard */,
+				36950F89295341280067128A /* GoogleService-Info.plist */,
 				165EEE4F291A726200B5E4F2 /* Info.plist */,
 			);
 			path = HealthHack;
@@ -103,6 +120,8 @@
 				165EEE47291A726100B5E4F2 /* Main.storyboard */,
 				3689D8852923A5DE0086CAFE /* AlarmTableViewCell.swift */,
 				3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */,
+				3606901C29489ED8008AD242 /* CustomCell.swift */,
+				3606901D29489ED8008AD242 /* CustomCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -120,6 +139,23 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		EBCF799CDE78479689BE7702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4C5394DE37C945C2D7F86BB /* Pods_HealthHack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F11A683FAB66958E543F47FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E695E66853E187AB514EDCF /* Pods-HealthHack.debug.xcconfig */,
+				C563E5C7C360A209EED63434 /* Pods-HealthHack.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 165EEE52291A726200B5E4F2 /* Build configuration list for PBXNativeTarget "HealthHack" */;
 			buildPhases = (
+				29856CAAFB9894A1D9D7DA58 /* [CP] Check Pods Manifest.lock */,
 				165EEE3A291A726100B5E4F2 /* Sources */,
 				165EEE3B291A726100B5E4F2 /* Frameworks */,
 				165EEE3C291A726100B5E4F2 /* Resources */,
+				E975ECD4AC70F3AFF7E8C5DE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,15 +222,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3606901F29489ED8008AD242 /* CustomCell.xib in Resources */,
 				3689D8882923A5DE0086CAFE /* AlarmTableViewCell.xib in Resources */,
 				165EEE4E291A726200B5E4F2 /* LaunchScreen.storyboard in Resources */,
 				3634DCDF29239E6000070744 /* ColumnTableViewCell.xib in Resources */,
 				165EEE4B291A726200B5E4F2 /* Assets.xcassets in Resources */,
 				165EEE49291A726100B5E4F2 /* Main.storyboard in Resources */,
+				36950F8A295341280067128A /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29856CAAFB9894A1D9D7DA58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthHack-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E975ECD4AC70F3AFF7E8C5DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthHack/Pods-HealthHack-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthHack/Pods-HealthHack-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthHack/Pods-HealthHack-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		165EEE3A291A726100B5E4F2 /* Sources */ = {
@@ -201,6 +283,8 @@
 			files = (
 				3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */,
 				165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */,
+				3606901E29489ED8008AD242 /* CustomCell.swift in Sources */,
+				3697673929509E9600CC8A7C /* NotificationPublisher.swift in Sources */,
 				3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */,
 				3634DCE129239EBA00070744 /* ColumnController.swift in Sources */,
 				3634DCDE29239E6000070744 /* ColumnTableViewCell.swift in Sources */,
@@ -350,6 +434,7 @@
 		};
 		165EEE53291A726200B5E4F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E695E66853E187AB514EDCF /* Pods-HealthHack.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,6 +463,7 @@
 		};
 		165EEE54291A726200B5E4F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C563E5C7C360A209EED63434 /* Pods-HealthHack.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
