@@ -5,6 +5,7 @@
 //  Created by kimminho on 2022/11/08.
 //
 
+import Firebase
 import UIKit
 import FatSecretSwift
 import UserNotifications
@@ -38,6 +39,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FatSecretCredentials.setConsumerKey(Constants.apiKey)
         FatSecretCredentials.setSharedSecret(Constants.apiSecret)
         requestNotificationAuthorization(application: application)
+        FirebaseApp.configure()
+        
         return true
     }
 
