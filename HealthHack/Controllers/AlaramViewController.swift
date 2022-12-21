@@ -4,11 +4,12 @@
 //
 //  Created by sehooon on 2022/11/15.
 //
-
 import UIKit
 
 class AlaramViewController: UIViewController {
 
+    private let notificationPublisher = NotificationPublisher()
+    
     @IBOutlet weak var alaramTableView: UITableView!
     
     
@@ -27,6 +28,9 @@ class AlaramViewController: UIViewController {
         alaramTableView.register(UINib(nibName: "AlarmTableViewCell", bundle: nil), forCellReuseIdentifier: "AlarmTableViewCell")
     }
 
+    @IBAction func sendNotification(_ sender: Any) {
+        notificationPublisher.sendNotification(title: "Hey", subtitle: "We made a cool", body: "notification app", badge: 1, delayInterval: nil)
+    }
     /*
     // MARK: - Navigation
 
