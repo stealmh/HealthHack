@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-        private func requestNotificationAuthorization(application: UIApplication){
+    private func requestNotificationAuthorization(application: UIApplication){
 
             let center = UNUserNotificationCenter.current()
             let options: UNAuthorizationOptions = [.alert, .badge, .sound]
@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     print(error.localizedDescription)
                 }
             }
-        }
+    }
     
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

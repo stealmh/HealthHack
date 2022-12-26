@@ -9,6 +9,7 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+
     private var registerModel = RegisterModel()
     
     
@@ -27,6 +28,7 @@ class RegisterViewController: UIViewController {
         Task {
             await registerModel.registerUser(userID: emailTextField.text!, userPW: passwordTextField.text!)
         }
+
     }
     /*
     // MARK: - Navigation

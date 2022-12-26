@@ -9,9 +9,14 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
+/*
+ 1.파이어베이스에서 Auth설정이 되어있는지... 팀 초대를 안해줘서 확인할 수 없었음
+ 
+ 2. 같은 코드로 새로운 프로젝트를 만들어 시도해봤을 때 정상적으로 작동 확인. 코드는 문제 없음
+ */
 
-final class RegisterModel: ObservableObject {
-    @Published var currentUser: Firebase.User?
+final class RegisterModel {
+    var currentUser: Firebase.User?
     
     init() {
         currentUser = Auth.auth().currentUser
@@ -19,7 +24,7 @@ final class RegisterModel: ObservableObject {
     
     //회원가입
     func registerUser(userID: String, userPW: String) async{
-        
+        print(#function)
         do {
             let result = try await Auth.auth().createUser(withEmail: userID, password: userPW)
             let user = result.user
