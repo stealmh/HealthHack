@@ -63,7 +63,12 @@ extension ColumnController: UISearchBarDelegate{
 
 // UITableViewDelegate
 extension ColumnController: UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let webVC = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as? WebViewController {
+            webVC.url = tableListArr[indexPath.row].link
+            present(webVC, animated: true)
+        }
+    }
 }
 
 
@@ -77,45 +82,33 @@ extension ColumnController: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = columnTable.dequeueReusableCell(withIdentifier: "ColumnTableViewCell", for: indexPath) as! ColumnTableViewCell
-        cell.columnTitle.attributedText = tableListArr[indexPath.row].title.htmlToAttributedString(font: .systemFont(ofSize: 20))
-        cell.columnDate.attributedText = tableListArr[indexPath.row].description.htmlToAttributedString(font: .systemFont(ofSize: 20))
-        if let url = URL(string: tableListArr[indexPath.row].thumbnail){
-            print(tableListArr[indexPath.row].thumbnail)
-            cell.columnImageView.load(url: url)
-        } else{
-            cell.columnImageView.image = UIImage(systemName: "plus")
-        }
+        cell.columnTitle.text = tableListArr[indexPath.row].title.htmlEscaped
+        cell.columnTitle.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        cell.columnBody.text = tableListArr[indexPath.row].description.htmlEscaped
         return cell
     }
 }
 
+
+// MARK: - Html 태그 제거
 extension String {
-  func htmlToAttributedString(font: UIFont) -> NSAttributedString? {
-      let newHTML = String(format:"<body style=\"font-family: '-apple-system', '\(font.fontName)';\">%@</body>", self)
+    var htmlEscaped: String {
+        guard let encodedData = self.data(using: .utf8) else {
+            return self
+        }
         
-    guard let data = newHTML.data(using: .utf8) else {
-      return NSAttributedString()
-    }
-    
-    do {
-      return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding:String.Encoding.utf8.rawValue], documentAttributes: nil)
-    } catch {
-      return NSAttributedString()
-    }
-  }
-}
-
-
-extension UIImageView {
-    func load(url: URL) {
-        DispatchQueue.global().async { [weak self] in
-            if let data = try? Data(contentsOf: url) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self?.image = image
-                    }
-                }
-            }
+        let options: [NSAttributedString.DocumentReadingOptionKey: Any] = [
+            .documentType: NSAttributedString.DocumentType.html,
+            .characterEncoding: String.Encoding.utf8.rawValue
+        ]
+        
+        do {
+            let attributed = try NSAttributedString(data: encodedData, options: options, documentAttributes: nil)
+            return attributed.string
+        } catch {
+            return self
         }
     }
 }
+
+

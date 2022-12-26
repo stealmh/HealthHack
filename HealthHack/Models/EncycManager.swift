@@ -13,11 +13,11 @@ class EncycManager{
     static let shared = EncycManager()
     
     private init(){}
-
+    
     func getData(with queryString: String) async throws -> [EncycData] {
         guard let utfEncodeUrl =
                 "\(NetworkConst.encycUrl)?query=\(queryString)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else{
-                fatalError("error String")
+            fatalError("error String")
         }
         
         guard let url = URL(string: utfEncodeUrl) else {
@@ -26,8 +26,8 @@ class EncycManager{
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.addValue("", forHTTPHeaderField: "X-Naver-Client-Id")
-        request.addValue("", forHTTPHeaderField: "X-Naver-Client-Secret")
+        request.addValue("rYvGldO_hdycToU7f2pM", forHTTPHeaderField: "X-Naver-Client-Id")
+        request.addValue("7JSRJQNeOs", forHTTPHeaderField: "X-Naver-Client-Secret")
         
         let (data, response) = try await URLSession.shared.data(for: request)
         

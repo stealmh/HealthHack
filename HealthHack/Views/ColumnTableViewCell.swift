@@ -11,8 +11,7 @@ class ColumnTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var columnTitle: UILabel!
-    @IBOutlet weak var columnImageView: UIImageView!
-    @IBOutlet weak var columnDate: UILabel!
+    @IBOutlet weak var columnBody: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -35,6 +35,7 @@
 		3689D8882923A5DE0086CAFE /* AlarmTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */; };
 		3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D8892923A8070086CAFE /* AlaramViewController.swift */; };
 		3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3689D88B2923AC020086CAFE /* PickerViewController.swift */; };
+		36C0B9362959DEDB00C49B80 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0B9352959DEDB00C49B80 /* WebViewController.swift */; };
 		36FFD1FD29535D9E0023D2C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 36FFD1FC29535D9E0023D2C3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		3689D8862923A5DE0086CAFE /* AlarmTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlarmTableViewCell.xib; sourceTree = "<group>"; };
 		3689D8892923A8070086CAFE /* AlaramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlaramViewController.swift; sourceTree = "<group>"; };
 		3689D88B2923AC020086CAFE /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		36C0B9352959DEDB00C49B80 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		36FFD1FC29535D9E0023D2C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		800A38666E516C2B23015A68 /* Pods_HealthHack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthHack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0206C28AF302F529B3A7DBE /* Pods-HealthHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHack.release.xcconfig"; path = "Target Support Files/Pods-HealthHack/Pods-HealthHack.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				165EEE5D291A793800B5E4F2 /* CalendarDetailViewController.swift */,
 				3689D8892923A8070086CAFE /* AlaramViewController.swift */,
 				3689D88B2923AC020086CAFE /* PickerViewController.swift */,
+				36C0B9352959DEDB00C49B80 /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				366754522947655000876BDC /* Encyc.swift in Sources */,
 				3689D88C2923AC020086CAFE /* PickerViewController.swift in Sources */,
 				3625F13229333D94004EBC25 /* AuthManager.swift in Sources */,
+				36C0B9362959DEDB00C49B80 /* WebViewController.swift in Sources */,
 				165EEE5E291A793800B5E4F2 /* CalendarDetailViewController.swift in Sources */,
 				3689D88A2923A8070086CAFE /* AlaramViewController.swift in Sources */,
 				163F10D62953539B00565BE8 /* NotificationPublisher.swift in Sources */,
